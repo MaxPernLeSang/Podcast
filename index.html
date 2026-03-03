@@ -8,6 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#e71b7b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <style>
     /* ===== RESET & BASE ===== */
     *,
@@ -363,110 +367,110 @@
     // Map each podcast to its image and a clean display title
     const PODCASTS = [
       {
-        file: "Podcasts/Alice et Léonie Notre école.wav",
-        image: "Image/Alice et Léonie Notre école.jpg",
+        file: "podcasts/alice-et-leonie-notre-ecole.wav",
+        image: "images/alice-et-leonie-notre-ecole.jpg",
         title: "Notre École",
         authors: "Alice & Léonie"
       },
       {
-        file: "Podcasts/Efi et Harmonie les marmottes.wav",
-        image: "Image/Efi et Harmonie les marmottes.jpg",
+        file: "podcasts/efi-et-harmonie-les-marmottes.wav",
+        image: "images/efi-et-harmonie-les-marmottes.jpg",
         title: "Les Marmottes",
         authors: "Efi & Harmonie"
       },
       {
-        file: "Podcasts/Eva et Lyne le ski alpin.wav",
-        image: "Image/Eva et Lyne le ski alpin.jpg",
+        file: "podcasts/eva-et-lyne-le-ski-alpin.wav",
+        image: "images/eva-et-lyne-le-ski-alpin.jpg",
         title: "Le Ski Alpin",
         authors: "Eva & Lyne"
       },
       {
-        file: "Podcasts/Indiana Mael Le Ski Club.wav",
-        image: "Image/Indiana Mael Le Ski Club.jpg",
+        file: "podcasts/indiana-mael-le-ski-club.wav",
+        image: "images/indiana-mael-le-ski-club.jpg",
         title: "Le Ski Club",
         authors: "Indiana & Maël"
       },
       {
-        file: "Podcasts/Jules et Emile les remontées mécaniques.wav",
-        image: "Image/Jules et Emile les remontées mécaniques.jpg",
+        file: "podcasts/jules-et-emile-les-remontees-mecaniques.wav",
+        image: "images/jules-et-emile-les-remontees-mecaniques.jpg",
         title: "Les Remontées Mécaniques",
         authors: "Jules & Emile"
       },
       {
-        file: "Podcasts/Le rap Tom et Leo.wav",
-        image: "Image/Le rap Tom et Leo.jpg",
+        file: "podcasts/le-rap-tom-et-leo.wav",
+        image: "images/le-rap-tom-et-leo.jpg",
         title: "Le Rap",
         authors: "Tom & Leo"
       },
       {
-        file: "Podcasts/Leonard et Sandro Le Plan de l'Arc.wav",
-        image: "Image/Leonard et Sandro Le Plan de l'Arc.jpg",
+        file: "podcasts/leonard-et-sandro-le-plan-de-l-arc.wav",
+        image: "images/leonard-et-sandro-le-plan-de-l-arc.jpg",
         title: "Le Plan de l'Arc",
         authors: "Léonard & Sandro"
       },
       {
-        file: "Podcasts/Les abeilles Giulia et Maya.wav",
-        image: "Image/Les abeilles Giulia et Maya.jpg",
+        file: "podcasts/les-abeilles-giulia-et-maya.wav",
+        image: "images/les-abeilles-giulia-et-maya.jpg",
         title: "Les Abeilles",
         authors: "Giulia & Maya"
       },
       {
-        file: "Podcasts/Les énergies Lohan.wav",
-        image: "Image/Les énergies Lohan.png",
+        file: "podcasts/les-energies-lohan.wav",
+        image: "images/les-energies-lohan.png",
         title: "Les Énergies",
         authors: "Lohan"
       },
       {
-        file: "Podcasts/amelie et thelma Le malinois.wav",
-        image: "Image/amelie et thelma Le malinois.jpeg",
+        file: "podcasts/amelie-et-thelma-le-malinois.wav",
+        image: "images/amelie-et-thelma-le-malinois.jpeg",
         title: "Le Malinois",
         authors: "Amélie & Thelma"
       },
       {
-        file: "Podcasts/cassius et Léonard La tortue marine.wav",
-        image: "Image/cassius et Léonard La tortue marine.jpeg",
+        file: "podcasts/cassius-et-leonard-la-tortue-marine.wav",
+        image: "images/cassius-et-leonard-la-tortue-marine.jpeg",
         title: "La Tortue Marine",
         authors: "Cassius & Léonard"
       },
       {
-        file: "Podcasts/clementine et Marius Coupe du monde ski.wav",
-        image: "Image/clementine et Marius Coupe du monde ski.jpg",
+        file: "podcasts/clementine-et-marius-coupe-du-monde-ski.wav",
+        image: "images/clementine-et-marius-coupe-du-monde-ski.jpg",
         title: "Coupe du Monde de Ski",
         authors: "Clémentine & Marius"
       },
       {
-        file: "Podcasts/galette.wav",
-        image: "Image/galette.jpg",
+        file: "podcasts/galette.wav",
+        image: "images/galette.jpg",
         title: "La Galette des Rois",
         authors: "Lucas & Nathan"
       },
       {
-        file: "Podcasts/mixage Katel Le cheval.wav",
-        image: "Image/mixage Katel Le cheval.jpg",
+        file: "podcasts/mixage-katel-le-cheval.wav",
+        image: "images/mixage-katel-le-cheval.jpg",
         title: "Le Cheval",
         authors: "Katel"
       },
       {
-        file: "Podcasts/mixage ella livia Les sports de glace.wav",
-        image: "Image/3d31a3_6e430281392344be80fa70ba82a4c30f~mv2.jpg",
+        file: "podcasts/mixage-ella-livia-les-sports-de-glace.wav",
+        image: "images/3d31a3-6e430281392344be80fa70ba82a4c30f-mv2.jpg",
         title: "Les Sports de Glace",
         authors: "Ella & Livia"
       },
       {
-        file: "Podcasts/nathan final La poule.wav",
-        image: "Image/nathan final La poule.jpg",
+        file: "podcasts/nathan-final-la-poule.wav",
+        image: "images/nathan-final-la-poule.jpg",
         title: "La Poule",
         authors: "Nathan"
       },
       {
-        file: "Podcasts/pia et Matys Le guépard.wav",
-        image: "Image/pia et Matys Le guépard.jpg",
+        file: "podcasts/pia-et-matys-le-guepard.wav",
+        image: "images/pia-et-matys-le-guepard.jpg",
         title: "Le Guépard",
         authors: "Pia & Matys"
       },
       {
-        file: "Podcasts/air.wav",
-        image: "Image/air.jpg",
+        file: "podcasts/air.wav",
+        image: "images/air.jpg",
         title: "L'Air",
         authors: "Thelma"
       }
@@ -576,6 +580,12 @@
       return m + ':' + String(sec).padStart(2, '0');
     }
 
+    // ===== SERVICE WORKER =====
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => { });
+      });
+    }
 
   </script>
 </body>
