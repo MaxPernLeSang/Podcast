@@ -495,7 +495,7 @@
         card.dataset.idx = idx;
         card.innerHTML = `
           <div class="thumb-wrap">
-            <img src="${pod.image}" alt="${pod.title}" loading="lazy" />
+            <img src="${pod.image}?t=${Date.now()}" alt="${pod.title}" />
             <div class="play-overlay" id="play-icon-${idx}">▶</div>
           </div>
           <div class="card-body">
