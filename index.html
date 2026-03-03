@@ -498,10 +498,10 @@
         card.className = 'card';
         card.dataset.idx = idx;
         card.innerHTML = `
-            <div class="thumb-wrap">
-              <img src="${pod.image}" alt="${pod.title}" />
-              <div class="play-overlay" id="play-icon-${idx}">▶</div>
-            </div>
+          <div class="thumb-wrap">
+            <img src="${pod.image}?t=${Date.now()}" alt="${pod.title}" />
+            <div class="play-overlay" id="play-icon-${idx}">▶</div>
+          </div>
           <div class="card-body">
             <div class="card-title">${pod.authors}<br><span style="color:var(--muted);font-weight:600">${pod.title}</span></div>
             <div class="progress-wrap"><div class="progress-bar" id="prog-${idx}"></div></div>
